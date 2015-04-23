@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.mechatronika</groupId>
+    <artifactId>TrackMCHTR</artifactId>
+    <version>0.0.1a</version>
+    <packaging>jar</packaging>
+    
+    <name>Track_MCHTR.jar</name>
+    <description>A Maven project implementing an Fiji plugin</description>
+    
+    <parent>
+	<groupId>sc.fiji</groupId>
+	<artifactId>pom-fiji</artifactId>
+	<version>7.0.0</version>
+	<relativePath />
+    </parent>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+    
+    <repositories>
+        <!-- NB: for project parent -->
+        <repository>
+            <id>imagej.public</id>
+            <url>http://maven.imagej.net/content/groups/public</url>
+        </repository>
+       
+    </repositories>
+    
+    <dependencies>
+        <!-- Fiji dependencies -->
+        <dependency>
+            <groupId>sc.fiji</groupId>
+            <artifactId>fiji-lib</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>sc.fiji</groupId>
+            <artifactId>Fiji_Plugins</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>sc.fiji</groupId>
+            <artifactId>legacy-imglib1</artifactId>
+            
+        </dependency>
+        <!-- JavaCV dependencies -->
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacv</artifactId>
+            <version>0.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.bytedeco</groupId>
+            <artifactId>javacpp</artifactId>
+            <version>0.9</version>
+        </dependency>
+            
+        <!--Database-->
+       <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+            <version>10.8.3.0</version>
+        </dependency> 
+        
+        <!-- Apache POI to manipulating and creating Excel documents -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.9</version> <!--3.9 może -->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.9</version>
+        </dependency>
+
+        
+
+            
+        <!-- ImageJ dependencies -->
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>ij</artifactId>
+        </dependency>
+        <!--ImgLib2 dependencies -->
+        <dependency>
+            <groupId>net.imglib2</groupId>
+            <artifactId>imglib2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.imglib2</groupId>
+            <artifactId>imglib2-algorithm</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.imglib2</groupId>
+            <artifactId>imglib2-ij</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>
